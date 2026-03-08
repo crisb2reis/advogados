@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #1E3A5F;
+  --accent: #C9A227;
+  --secondary: #f8fafc;
+  --text-muted: #64748b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-text-muted: var(--text-muted);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.glass-header {
+  @apply sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/90 transition-all duration-300;
+}
+
+.btn-accent {
+  @apply inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-semibold rounded-md hover:bg-accent/90 transition-all duration-300;
+}
+
+.card {
+  @apply bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300;
+}
