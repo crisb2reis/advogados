@@ -26,7 +26,7 @@ export default function About() {
                     >
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/advogado.png"
+                                src="/advogados/advogado.png"
                                 alt="Dr. Cristiano Reis - Advogado"
                                 width={600}
                                 height={700}

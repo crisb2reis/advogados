@@ -10,7 +10,7 @@ export default function Hero() {
             {/* Background with overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-bg.png"
+                    src="/advogados/hero-bg.png"
                     alt="Escritório de Advocacia"
                     fill
                     className="object-cover"
@@ -58,7 +58,7 @@ export default function Hero() {
                     >
                         <div className="relative z-10 rounded-2xl overflow-hidden border-8 border-white/10 shadow-2xl">
                             <Image
-                                src="/advogado.png"
+                                src="/advogados/advogado.png"
                                 alt="Advogado Especialista"
                                 width={500}
                                 height={600}
